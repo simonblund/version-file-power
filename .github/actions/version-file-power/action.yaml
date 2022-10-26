@@ -1,0 +1,14 @@
+name: 'Version file power'
+description: 'Will write a version file for you.'
+inputs:
+  path-to-version:  # id of input
+    description: 'Path to __version__ file'
+    required: false
+    default: './'
+  version:  # id of input
+    description: 'Version to write'
+    required: true
+
+runs:
+  using: 'node16'
+  main: 'index.js'
